@@ -70,6 +70,8 @@ try {
   let tx = await Mina.transaction({ sender: feepayerAddress, fee }, () => {
     zkApp.update();
   });
+
+  // tx.prove is going to create a zkp
   await tx.prove();
   console.log('send transaction...');
   sentTx = await tx.sign([feepayerKey]).send();
