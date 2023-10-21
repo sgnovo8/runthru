@@ -6,7 +6,16 @@
       "keyPath": "keys/testnet.json",
       "feepayerKeyPath": "/home/snovosel/.cache/zkapp-cli/keys/testnet.json",
       "feepayerAlias": "testnet",
-      "fee": "0.1"
+      "fee": "0.1",
+      "smartContract": "Add"
+    },
+    "testnet2": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/testnet2.json",
+      "feepayerKeyPath": "/home/snovosel/.cache/zkapp-cli/keys/03-deploy.json",
+      "feepayerAlias": "03-deploy",
+      "fee": ".10",
+      "smartContract": "Add"
     }
   }
 }
