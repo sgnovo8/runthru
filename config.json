@@ -16,6 +16,20 @@
       "feepayerAlias": "03-deploy",
       "fee": ".10",
       "smartContract": "Add"
+    },
+    "testnet3": {
+      "url": "'https://proxy.berkeley.minaexplorer.com/graphql'",
+      "keyPath": "keys/testnet3.json",
+      "feepayerKeyPath": "/home/snovosel/.cache/zkapp-cli/keys/runthru.json",
+      "feepayerAlias": "runthru",
+      "fee": "0.1"
+    },
+    "testnet4": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/testnet4.json",
+      "feepayerKeyPath": "/home/snovosel/.cache/zkapp-cli/keys/my_fee_payer_account_tnet4.json",
+      "feepayerAlias": "my_fee_payer_account_tnet4",
+      "fee": "0.1"
     }
   }
 }
