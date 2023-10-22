@@ -14,7 +14,7 @@
  */
 
 import { Mina, PrivateKey, PublicKey, fetchAccount } from 'o1js';
-import { Add } from './Add';
+import { Add } from './Add.js';
 
 const Network = Mina.Network('https://proxy.berkeley.minaexplorer.com/graphql');
 
@@ -22,8 +22,8 @@ Mina.setActiveInstance(Network);
 
 const appKey = PublicKey.fromBase58('B62qqFTF3dh6jXh5iKbWmpLuVFXTRuAK6NRffPh1q8KZ6ut6T83fZSr');
 
+await fetchAccount({ publicKey: appKey });
 const zkApp = new Add(appKey);
-
 console.log(zkApp.num.get() .toString());
 
 /**
