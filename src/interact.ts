@@ -12,6 +12,22 @@
  * Build the project: `$ npm run build`
  * Run with node:     `$ node build/src/interact.js <deployAlias>`.
  */
+
+import { Mina, PrivateKey, PublicKey, fetchAccount } from 'o1js';
+import { Add } from './Add';
+
+const Network = Mina.Network('https://proxy.berkeley.minaexplorer.com/graphql');
+
+Mina.setActiveInstance(Network);
+
+const appKey = PublicKey.fromBase58('B62qqFTF3dh6jXh5iKbWmpLuVFXTRuAK6NRffPh1q8KZ6ut6T83fZSr');
+
+const zkApp = new Add(appKey);
+
+console.log(zkApp.num.get() .toString());
+
+/**
+
 import { Mina, PrivateKey } from 'o1js';
 import fs from 'fs/promises';
 import { Add } from './Add.js';
@@ -88,3 +104,4 @@ as soon as the transaction is included in a block:
 https://berkeley.minaexplorer.com/transaction/${sentTx.hash()}
 `);
 }
+*/
