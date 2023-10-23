@@ -14,7 +14,7 @@ export class Add extends SmartContract {
 
   init() {
     super.init();
-    this.num.set(Field(8));
+    this.num.set(Field(1));
   }
 
   @method update() {

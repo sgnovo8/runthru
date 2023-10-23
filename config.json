@@ -22,14 +22,40 @@
       "keyPath": "keys/testnet3.json",
       "feepayerKeyPath": "/home/snovosel/.cache/zkapp-cli/keys/runthru.json",
       "feepayerAlias": "runthru",
-      "fee": "0.1"
+      "fee": "0.1",
+      "smartContract": "Add"
     },
     "testnet4": {
       "url": "https://proxy.berkeley.minaexplorer.com/graphql",
       "keyPath": "keys/testnet4.json",
       "feepayerKeyPath": "/home/snovosel/.cache/zkapp-cli/keys/my_fee_payer_account_tnet4.json",
       "feepayerAlias": "my_fee_payer_account_tnet4",
-      "fee": "0.1"
+      "fee": "0.1",
+      "smartContract": "Add"
+    },
+    "testnet5": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/testnet5.json",
+      "feepayerKeyPath": "/home/snovosel/.cache/zkapp-cli/keys/tstnt5.json",
+      "feepayerAlias": "tstnt5",
+      "fee": "0.1",
+      "smartContract": "Add"
+    },
+    "onemoretime": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/onemoretime.json",
+      "feepayerKeyPath": "/home/snovosel/.cache/zkapp-cli/keys/onemoretime.json",
+      "feepayerAlias": "onemoretime",
+      "fee": "0.1",
+      "smartContract": "Add"
+    },
+    "whatever": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/whatever.json",
+      "feepayerKeyPath": "/home/snovosel/.cache/zkapp-cli/keys/03-deploy.json",
+      "feepayerAlias": "03-deploy",
+      "fee": ".1",
+      "smartContract": "Add"
     }
   }
 }

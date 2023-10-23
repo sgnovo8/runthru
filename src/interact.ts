@@ -20,10 +20,11 @@ const Network = Mina.Network('https://proxy.berkeley.minaexplorer.com/graphql');
 
 Mina.setActiveInstance(Network);
 
-const appKey = PublicKey.fromBase58('B62qqFTF3dh6jXh5iKbWmpLuVFXTRuAK6NRffPh1q8KZ6ut6T83fZSr');
+const appKey = PublicKey.fromBase58('B62qjdNRr4vN2zj7HffCdhNzTewNhJZ9dovHPYZkyM4ReUyAw37Va5P');
 
-await fetchAccount({ publicKey: appKey });
 const zkApp = new Add(appKey);
+await fetchAccount({ publicKey: appKey });
+
 console.log(zkApp.num.get() .toString());
 
 /**
